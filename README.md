@@ -10,9 +10,13 @@ Skylance is a 50-person, fully remote B2B SaaS company. It runs on AWS, keeps so
 ## Repo contents
 | File | What it is |
 |---|---|
+| `01-scope-and-assets/asset-inventory.csv` | 8 assets with owner, data classification and criticality |
+| `02-risk-assessment/methodology.md` | Likelihood/impact scales, rating bands, risk appetite and treatment options |
 | `02-risk-assessment/risk-register.csv` | 14 risks with threat, weakness, likelihood x impact score, treatment, owner and residual score |
+| `02-risk-assessment/risk-heatmap.png` | Inherent vs residual risk, plotted on a 5x5 grid |
 | `03-control-mapping/nist-csf-iso27001-mapping.csv` | Each risk mapped to NIST CSF 2.0 categories and ISO 27001:2022 controls |
 | `04-gap-analysis/gap-analysis.md` | Current vs target state and a 180-day prioritised remediation plan |
+| `05-policies/incident-response-policy.md` | Severity levels, roles and the response process |
 | `06-executive-summary/exec-summary.md` | One-page summary for non-technical leadership |
 
 Risk IDs (R01-R14) are used consistently across every file.
@@ -36,7 +40,11 @@ Risk IDs (R01-R14) are used consistently across every file.
 - A good plan mixes **preventive** controls (approval steps) and **detective** ones (scanning, logging).
 - If the residual score equals the starting score, the plan is not doing anything and needs rethinking.
 
+## Still to add
+An access control policy and an acceptable use policy (the incident response policy is done).
 
+## Next projects
+Vendor risk assessment questionnaire, incident response tabletop exercise, ISO 27001 policy pack, SOC 2 or PCI-DSS readiness checklist.
 
 ## Limitations
 Single assessor, qualitative scores and invented data. A real assessment would validate scores with asset owners and use incident and threat data.
