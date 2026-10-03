@@ -36,14 +36,10 @@ Risk IDs (R01-R14) are used consistently across every file.
 - A good plan mixes **preventive** controls (approval steps) and **detective** ones (scanning, logging).
 - If the residual score equals the starting score, the plan is not doing anything and needs rethinking.
 
-## Still to add
-Asset inventory, written methodology, risk heatmap, and access control / incident response policies.
 
-## Next projects
-Vendor risk assessment questionnaire, incident response tabletop exercise, ISO 27001 policy pack, SOC 2 or PCI-DSS readiness checklist.
 
 ## Limitations
 Single assessor, qualitative scores and invented data. A real assessment would validate scores with asset owners and use incident and threat data.
 
 ## Author
-[Your name] - [LinkedIn / GitHub link]
+Neha Raj
