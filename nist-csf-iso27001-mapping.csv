@@ -1,0 +1,29 @@
+risk_id,csf_function,csf_category,iso27001_2022_control,iso_control_name,recommended_control
+R01,PROTECT,PR.AA,A.5.15,Access control,Least-privilege IAM on the S3 buckets holding code
+R01,PROTECT,PR.PS,A.8.9,Configuration management,Harden WAF/CDN and bucket settings; block direct bucket access
+R02,PROTECT,PR.AA,A.8.5,Secure authentication,Enforce MFA and passkeys; short session lifetimes
+R02,PROTECT,PR.PS,A.8.7,Protection against malware,Endpoint protection on all laptops to stop cookie-stealing malware
+R03,PROTECT,PR.IR,A.8.20,Networks security,DDoS protection service/CDN and rate limiting in front of the app
+R03,PROTECT,PR.IR,A.8.6,Capacity management,Autoscaling and capacity monitoring so load spikes do not cause outages
+R04,IDENTIFY,ID.RA,A.8.8,Management of technical vulnerabilities,Regular vulnerability scans and a patch schedule
+R04,PROTECT,PR.PS,A.8.9,Configuration management,Secure baseline configuration for servers and containers
+R05,GOVERN,GV.SC,A.5.21,Managing information security in the ICT supply chain,Dependency scanning and third-party audits
+R05,PROTECT,PR.PS,A.8.32,Change management,Mandatory approval step before production deploys
+R06,PROTECT,PR.DS,A.8.24,Use of cryptography,Enforce TLS 1.2+ and HSTS for all traffic
+R06,PROTECT,PR.IR,A.8.20,Networks security,Block insecure protocols; manage certificates
+R07,PROTECT,PR.AA,A.5.17,Authentication information,Breached-password checks and password manager
+R07,PROTECT,PR.AA,A.8.5,Secure authentication,Passkeys/MFA and login rate limiting
+R08,PROTECT,PR.DS,A.8.24,Use of cryptography,Encrypt the customer database at rest
+R08,PROTECT,PR.AA,A.8.3,Information access restriction,Restrict database access to named roles
+R09,PROTECT,PR.DS,A.8.13,Information backup,Immutable backups in a separate account
+R09,RECOVER,RC.RP,A.5.30,ICT readiness for business continuity,Quarterly restore tests with recorded recovery times
+R10,DETECT,DE.CM,A.8.15,Logging,"Central logging of app, cloud and login activity"
+R10,DETECT,DE.CM,A.8.16,Monitoring activities,Threat detection and alerts to an on-call channel
+R11,PROTECT,PR.AT,A.6.3,"Information security awareness, education and training",Onboarding training and quarterly phishing simulations
+R11,PROTECT,PR.AA,A.8.5,Secure authentication,Phishing-resistant passkeys for all staff
+R12,GOVERN,GV.SC,A.5.19,Information security in supplier relationships,Vendor questionnaire and data processing agreement before onboarding
+R12,GOVERN,GV.SC,A.5.22,"Monitoring, review and change management of supplier services",Annual review of critical vendors
+R13,RESPOND,RS.MA,A.5.24,Information security incident management planning and preparation,Incident response policy with roles and severity levels
+R13,RESPOND,RS.MA,A.5.26,Response to information security incidents,Runbooks and a yearly tabletop exercise
+R14,PROTECT,PR.DS,A.8.33,Test information,Use synthetic or masked data in QA and test
+R14,PROTECT,PR.PS,A.8.31,"Separation of development, test and production environments","Separate accounts and access for prod, QA and test"

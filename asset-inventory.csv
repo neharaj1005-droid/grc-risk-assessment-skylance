@@ -1,0 +1,9 @@
+asset_id,asset_name,type,description,owner,data_classification,criticality_1to5,location
+A01,Customer database (cloud),Data,Holds customer personal data; tampering or loss hurts reputation and money,Head of Engineering,Restricted,5,AWS us-east-1
+A02,Cloud storage and backups,Data,Automated backups and snapshots; company data must stay on secured cloud platforms,DevOps Lead,Confidential,4,AWS us-east-1
+A03,Production web app,Application,Customer-facing SaaS platform; downtime delays work against deadlines and can open a path for attackers,Head of Engineering,Confidential,5,AWS us-east-1
+A04,Google Workspace (staff login and email),SaaS,"Staff log in with email, password and a one-time code (OTP); identity provider for email, Drive and Calendar",Head of IT,Confidential,4,Google cloud
+A05,"Code environments and CI/CD (prod, QA, test)",Software,Code moves from lower to higher environments through CI/CD pipelines,CTO,Confidential,5,GitHub cloud / AWS
+A06,S3 buckets storing code,Data,"Source code is kept in S3 buckets, reached through the app's WAF/CDN layer",CTO,Confidential,4,AWS us-east-1
+A07,Employees and contractors,People,50 remote staff and contractors working across time zones,People Ops Manager,Internal,4,Remote
+A08,Third-party vendors,Service,"Payment, support, analytics and email delivery SaaS vendors handling some customer data",COO,Confidential,4,Vendor cloud
